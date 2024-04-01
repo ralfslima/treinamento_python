@@ -14,7 +14,7 @@ def cadastrar():
     #nome = input()
     #nomes.append(nome)
 
-# *************** Função de listagem
+# *************** Função para listar
 def listar():
     print('Listagem:')
     for n in nomes:

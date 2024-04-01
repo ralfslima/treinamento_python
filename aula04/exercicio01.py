@@ -15,7 +15,7 @@ voto = 0
 while voto != 5:
     
     # Mensagem
-    print('*** VOTAÇÃO ***')
+    print('**** VOTAÇÃO ****')
     print('1 - Candidato 01')
     print('2 - Candidato 02')
     print('3 - Candidato 03')
@@ -79,7 +79,7 @@ if cand3 > maiorVoto:
 if cand4 > maiorVoto:
     maiorVoto = cand4
 
-print('*** RESULTADO ***')
+print('**** RESULTADO ****')
 
 contador = 0
 
