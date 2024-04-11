@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 - Formulário</title>
+</head>
+<body>
+    
+    <!-- Formulário 1 -->
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade">
+    
+        <br><br>
+
+        <label>Nascimento:</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Senha:</label>
+        <input type="password">
+    </form>
+
+    <!-- Separador -->
+    <hr>
+
+    <!-- Formulário 2 -->
+    <form action="http://www.google.com">
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <!-- Separador -->
+    <hr>
+
+    <!-- Formulário 3 -->
+    <form>
+
+        <fieldset>
+            <legend>Escolha uma linguagem</legend>
+        
+            <input type="checkbox" id="java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="csharp">
+            <label for="csharp">C#</label>
+
+            <input type="checkbox" id="php">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" id="python">
+            <label for="python">Python</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha um turno</legend>
+
+            <input type="radio" id="matutino" name="turno">
+            <label for="matutino">Matutino</label>
+
+            <input type="radio" id="vespertino" name="turno">
+            <label for="vespertino">Vespertino</label>
+
+            <input type="radio" id="noturno" name="turno">
+            <label for="noturno">Noturno</label>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

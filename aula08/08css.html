@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 - CSS</title>
+
+    <!-- CSS -->
+    <style>
+        body{
+            background-color: rgb(188, 249, 144);
+        }
+
+        form{
+            background-color: white;
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 50px auto;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+
+        // Função
+        function acao(){
+            // Obter o nome informado
+            var nome = document.querySelector('#nome').value
+
+            // Retornar o nome
+            alert('Boa noite ' + nome)
+        }
+
+    </script>
+</head>
+<body>
+    
+    <form>
+        <input type="text" placeholder="Informe seu nome" id="nome">
+        <input type="button" value="Enviar" onclick="acao()">
+    </form>
+
+</body>
+</html>
