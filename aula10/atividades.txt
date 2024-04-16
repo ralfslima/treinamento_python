@@ -1,0 +1,29 @@
+1º Haverá um formulário contendo os seguintes elementos:
+    1 campo de texto, para armazenar o nome
+    2 campos de número, para armazenar duas notas
+    1 botão para ralizar a média
+
+2º Haverá um formulário contendo os elementos:
+    1 select, com cinco cidades
+    1 botão para executar
+
+3º Haverá um formulário contendo os elementos:
+    1 campo de numérico
+    1 botão para realizar a tabuada
+
+4º Haverá um formulário contendo os elementos:
+    1 caixa de texto (texarea)
+    1 botão para realizar a quantidade de vogais e consoantes
+
+5º Haverá um formulário contendo os elementos:
+    1 campo de texto para o nome da pessoa
+    1 campo de e-mail
+    1 campo number para idade
+    1 botão, ao clicar deverá ser validado o formulário
+
+    Validações:
+        - Nenhum campo pode estar vazio
+        - O campo nome deve ter pelo menos três caracteres
+        - O campo e-mail precisa conter @ e ponto
+        - O campo idade precisa ser um número
+        - O campo idade não pode aceitar valores inferiores a zero
