@@ -12,7 +12,7 @@
     1 botão para realizar a tabuada
 
 4º Haverá um formulário contendo os elementos:
-    1 caixa de texto (texarea)
+    1 caixa de texto (textarea)
     1 botão para realizar a quantidade de vogais e consoantes
 
 5º Haverá um formulário contendo os elementos:
