@@ -1,0 +1,22 @@
+O que é o Flask?
+O Flask é um framework Python para trabalhar com projetos web.
+
+Como funciona?
+Integração de arquivos PY (Python) e HTML.
+
+Características:
+    - Estrutura amigável.
+    - Muitas funcionalidades prontas para uso.
+    - Tecnologia gratuita.
+    - Comunidade muito forte.
+
+Instalação do Flask:
+    - Verificar se tem o pip: pip3 --version
+    - pip3 install flask
+
+Executar projeto:
+    flask --app nome_do_projeto run
+
+Requisições:
+    GET  -> Recebe dados via URL
+    POST -> Recebe dados de maneira oculta (você pode manipular arquivos)
