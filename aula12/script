@@ -1,0 +1,70 @@
+# Operadores relacionais
+# >   Maior
+# <   Menor
+# >=  Maior ou igual
+# <=  Menor ou igual
+# =   Igual
+# <>  Diferente
+
+# Operadores lógicos
+# AND
+# OR
+# NOT
+
+# Quando trabalhar com null
+# IS NULL = É nulo
+# IS NOT NULL = Não é nulo
+
+# Criando base de dados
+CREATE DATABASE base;
+
+# Selecionar base de dados
+USE base;
+
+# Criando tabela
+CREATE TABLE produtos(
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(30),
+    marca VARCHAR(20),
+    valor DOUBLE
+);
+
+# Estrutura da tabela
+DESCRIBE produtos;
+
+# Inserir um produto
+INSERT INTO produtos VALUES (null, "Smartphone Galaxy S24", "Samsung", 7000);
+INSERT INTO produtos (nome, marca) VALUES ("iPhone 15", "Apple");
+INSERT INTO produtos (nome, marca, valor) VALUES
+("Galaxy S23 FE", "Samsung", 3200),
+("Readme Note", "Xiaomi", 1500),
+("iPhone 14", "Apple", 6000);
+
+# Selecionar todos os produtos
+SELECT * FROM produtos;
+SELECT nome, valor FROM produtos;
+SELECT SUM(valor) AS "Soma dos valores" FROM produtos;
+SELECT MAX(valor) FROM produtos;
+SELECT MIN(valor) FROM produtos;
+SELECT AVG(valor) FROM produtos;
+SELECT COUNT(*) FROM produtos;
+SELECT * FROM produtos WHERE valor >= 4000;
+SELECT * FROM produtos WHERE marca = "Apple" AND valor >= 5000;
+SELECT * FROM produtos WHERE valor IS NULL;
+SELECT * FROM produtos ORDER BY nome;
+SELECT * FROM produtos ORDER BY valor DESC;
+SELECT * FROM produtos WHERE valor BETWEEN 1000 AND 4000;
+SELECT marca FROM produtos GROUP BY marca;
+SELECT marca, count(*) FROM produtos GROUP BY marca;
+
+# Alteração/edição
+UPDATE produtos SET valor = 9000 WHERE valor IS NULL;
+
+# Remoção
+DELETE FROM produtos WHERE marca <> "Samsung" AND marca <> "Apple";
+
+# Excluir a tabela
+DROP TABLE produtos;
+
+# Excluir a base de dados
+DROP DATABASE base;
